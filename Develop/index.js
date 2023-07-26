@@ -117,8 +117,9 @@ ${answers.contributing}
 ${answers.tests}
 
 ## Questions
-My GitHub username: ${answers.username}
-My email address: ${answers.email}
+You can reach me with additional questions here.\n
+GitHub: ${answers.username}\n
+Email: ${answers.email}\n
 ${answers.contact}
 `;
 
