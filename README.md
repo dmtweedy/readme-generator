@@ -5,4 +5,4 @@ This assignment is a beginner NodeJS assignment showing understanding of how Nod
 
 ![Application demo](https://github.com/dmtweedy/readme-generator/assets/135908704/abd4aefc-62d2-46e9-aa4e-b612a0749bb2)
 
-[Sample](https://github.com/dmtweedy/readme-generator/assets/135908704/f86b1722-6872-4eff-a56b-6bbb8308857e)
+![Sample](https://github.com/dmtweedy/readme-generator/assets/135908704/f86b1722-6872-4eff-a56b-6bbb8308857e)
