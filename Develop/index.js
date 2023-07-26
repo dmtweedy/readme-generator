@@ -122,7 +122,7 @@ My email address: ${answers.email}
 ${answers.contact}
 `;
 
-    writeToFile('readme.md', readmeTemplate);
+    writeToFile('generate-readme.md', readmeTemplate);
   })
   .catch((error) => {
     console.error(error);
