@@ -3,7 +3,8 @@
 
 function renderLicenseBadge(license) {
   if (license) {
-    return `[![License](license_badge_url)](https://opensource.org/licenses/${license})`;
+    const licenseBadgeURL = `https://img.shields.io/badge/license-${license}-blue.svg`;
+    return `[![License](${licenseBadgeURL})](https://opensource.org/licenses/${license})`;
   }
   return '';
 }
@@ -33,44 +34,8 @@ This project is covered under the ${license} License. See [License](https://open
 
 // TODO: Create a function to generate markdown for README
 
-function generateMarkdown(data) {
-  const licenseBadge = renderLicenseBadge(data.license);
-  const licenseSection = renderLicenseSection(data.license);
-
-  return `# ${data.title}
-
-${licenseBadge}
-
-## Description
-${data.description}
-
-## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-${licenseSection ? '- [License](#license)\n' : ''}
-- [Contributing](#contributing)
-- [Tests](#tests)
-- [Questions](#questions)
-
-## Installation
-${data.installation}
-
-## Usage
-${data.usage}
-
-${licenseSection}
-
-## Contributing
-${data.contributing}
-
-## Tests
-${data.tests}
-
-## Questions
-My GitHub username: ${data.username}
-My email address: ${data.email}
-${data.contact ? `${data.contact}\n` : ''}
-`;
-}
-
-module.exports = generateMarkdown;
+module.exports = {
+  renderLicenseBadge,
+  renderLicenseLink,
+  renderLicenseSection,
+};

@@ -2,6 +2,11 @@
 
 const fs = require('fs');
 const inquirer = require('inquirer');
+const {
+  renderLicenseBadge,
+  renderLicenseLink,
+  renderLicenseSection,
+} = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 
@@ -87,8 +92,14 @@ function init() {
     },
   ])
   .then((answers) => {
+
+    const licenseBadge = renderLicenseBadge(answers.license);
+    const licenseLink = renderLicenseLink(answers.license);
+    const licenseSection = renderLicenseSection(answers.license);
     const readmeTemplate = 
 `# ${answers.title}
+
+${licenseBadge}
 
 ## Description
 ${answers.description}
@@ -96,7 +107,7 @@ ${answers.description}
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
-- [License](#license)
+${licenseLink ? `- [License](#license)\n` : ''}
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
@@ -107,8 +118,7 @@ ${answers.installation}
 ## Usage
 ${answers.usage}
 
-## License
-${answers.license}
+${licenseSection}
 
 ## Contributing
 ${answers.contributing}

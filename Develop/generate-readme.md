@@ -1,34 +1,41 @@
-# s
+# ReadMe Generator
+
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-s
+Professional template for a readme.md file
 
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
+
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
 
 ## Installation
-s
+Download all files and open in node in your terminal
 
 ## Usage
-s
+Copy and paste or export new readme.md file for any of your coding needs
 
 ## License
-MIT
+
+This project is covered under the MIT License. See [License](https://opensource.org/licenses/MIT) for more information.
+
 
 ## Contributing
-s
+N/A
 
 ## Tests
-s
+N/A
 
 ## Questions
-My GitHub username: s
+You can reach me with additional questions here.
 
-My email address: s
+GitHub: dmtweedy
 
-s
+Email: damon.tweedy@yahoo.com
+
+Don't contact me
