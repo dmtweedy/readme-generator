@@ -34,6 +34,8 @@ This project is covered under the ${license} License. See [License](https://open
 
 // TODO: Create a function to generate markdown for README
 
+// export the functions to render badge/link/section
+
 module.exports = {
   renderLicenseBadge,
   renderLicenseLink,

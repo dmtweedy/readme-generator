@@ -10,6 +10,8 @@ const {
 
 // TODO: Create an array of questions for user input
 
+// messages for the user to answer to
+
 const questions = [
   "Enter your GitHub username:",
   "Enter your email address:",
@@ -36,6 +38,8 @@ function writeToFile(fileName, data) {
 }
 
 // TODO: Create a function to initialize app
+
+// different input prompts for the user based on message
 
 function init() {
   inquirer.prompt([
@@ -97,6 +101,9 @@ function init() {
     const licenseLink = renderLicenseLink(answers.license);
     const licenseSection = renderLicenseSection(answers.license);
     const readmeTemplate = 
+
+// readme template to generate
+
 `# ${answers.title}
 
 ${licenseBadge}
@@ -133,7 +140,9 @@ Email: ${answers.email}\n
 ${answers.contact}
 `;
 
-    writeToFile('generate-readme.md', readmeTemplate);
+// write to my sample.md file
+
+    writeToFile('./output/sample.md', readmeTemplate);
   })
   .catch((error) => {
     console.error(error);
